@@ -1,0 +1,429 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:980px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'zmdi';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+	src: url("../fonts/Material-Design-Iconic-Font.woff");
+	src: url("../fonts/Material-Design-Iconic-Font.woff2");
+    font-style: normal
+}
+::placeholder {
+  color:#D3CFCB;
+}
+
+#header{
+	height: 49px;
+}
+#header section.wrapper{
+	display: flex;
+	justify-content: space-between;
+	height: 65px;
+}
+#header section.wrapper div.logo{
+	display: flex;
+    align-items: center;
+    width: 10%;
+    height: 65px;
+
+}
+#header section.wrapper div.logo h1{
+	
+
+}
+#header section.wrapper div.logo h1 a{
+	disp
+
+}
+#header section.wrapper div.logo h1 a img{
+	width: 90px;
+	display: block;
+	
+
+}
+#header section.wrapper div.nav{
+	display: flex;
+    align-items: center;
+
+}
+#header section.wrapper div.nav div.search-icon{
+	display: none;
+}
+#header section.wrapper div.nav ul{
+	display: flex;
+	/* align-items: center; */
+}
+#header section.wrapper div.nav ul li {
+    margin-right: 12px;
+    text-align: center;
+    font-size: 11px
+}
+#header section.wrapper div.nav ul:nth-child(7){
+	margin-right: 0px;
+}
+#header section.wrapper div.nav ul li a{
+	display: inline-block;
+}
+#header section.wrapper div.nav ul li a.search{
+	background-color: #50c6ce;
+	padding: 7px 7px 7px 7px;
+	border-radius: 20px;
+	color: white;
+}
+#header section.wrapper div.nav ul li a.search i.zmdi{
+	margin-right: 5px;
+}
+#spotlight{
+	background-color: #c8d4d2;
+	width: 100%;
+	height: 560px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#spotlight div.content{
+	width: 50%;
+	height: 100px;
+	text-align: center;
+}
+#spotlight div.content h1{
+	color: white;
+    font-weight: bold;
+}
+#spotlight div.content p{
+	color: white;
+}
+#spotlight div.search{
+	background-color: #ddeae0;
+	width: 65%;
+	height: 57px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}	
+#spotlight div.search input.search-space{
+	background-color: white;
+	width: 80%;
+	height: 40px;
+	padding: 3px;
+	/* margin-top: 9px; */
+	/* margin-left: 10px; */
+}
+#spotlight div.search a{
+	display: inline-block;
+}
+#spotlight div.search a button{
+	background-color: #54c5cd;
+	width: 80px;
+	height: 40px;
+	color: white;
+}
+#spotlight div.search  div.img-box{
+	background-color: white;
+	width: 35px;
+}
+#spotlight div.search  div.img-box a{
+	
+}
+#spotlight div.search  div.img-box a img{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+	border-right: 0.5px solid #969292;
+}
+#spotlight div.search input.search-space::placeholder{
+	padding: 3px;
+
+}
+#header section.wrapper div.nav ul li:hover{
+	border-bottom: #50c6ce 1px solid;
+	padding-bottom: 2px;
+}
+@media all and (max-width: 1080px){
+	#spotlight div.search{
+		width: 63%;
+		
+	}	
+}
+@media all and (max-width: 980px){
+	#header div.right{
+		width: 66%;
+	}
+	#header section.wrapper div.nav {
+		width: 55%;
+	}
+	#header section.wrapper div.nav ul li {
+		margin-right: 7px;
+	}
+}
+@media all and (max-width: 872px){
+	#header section.wrapper div.nav {
+		width: 70%;
+	}
+	#header section.wrapper div.nav ul li {
+		margin-right: 12px;
+	}
+}
+@media all and (max-width: 768px){
+	#header div.left{
+		width: 20%;
+	}
+	#header div.left img{
+		width: 76%;
+	}
+	#header div.right{
+		width: 73%%;
+	}
+	#header div.right ul{
+		font-size: 10px;
+	}
+	#spotlight div.search div.img-box{
+		width: 37px;
+	}
+	#spotlight div.search {
+		width: 88%;
+	}
+	#spotlight div.search input.search-space{
+		width: 77%;
+	}
+	#header section.wrapper div.nav ul li {
+		margin-right: 8px;
+	}
+	#spotlight div.content h1 {
+		width: 370px;
+	}
+	#spotlight div.content {
+		height: 115px;
+	}
+@media all and (max-width: 640px){
+	#header div.left img{
+		width: 76%;
+		display: inline-block;
+    	padding: 20px;
+	}
+	#header div.right ul {
+		font-size: 10px;
+	}
+	#header div.right {
+		width: 78%;
+    	padding-top: 7px;
+	}
+	#header section.wrapper div.nav ul{
+		display: none;
+	}
+	#header section.wrapper div.nav ul li {
+		margin-right: 09px;
+		font-size: 08px;
+	}
+	#header section.wrapper div.nav div.search-icon{
+	display: none;
+}
+	#header section.wrapper div.nav div.search-icon{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 115%;
+		margin-bottom: 11px;
+		padding: 5px;
+	}
+	#header section.wrapper div.logo h1 a img{
+		width: 100px;
+		margin-bottom: 14px;
+		margin-left: 23px;
+	}
+	#spotlight div.content{
+		margin-right: 120px	;
+	}
+	#spotlight div.content h1{
+		font-size: 22px;
+	}
+	p{
+		font-size: 7px;
+    	margin-left: 100px
+	}
+	#spotlight div.search {
+		width: 82%;
+		height: 55px;
+	}
+	#spotlight div.search input.search-space{
+		width: 66%;
+	}
+	#spotlight div.search div.img-box{
+		width: 36px;
+	}
+	#spotlight div.content {
+		height: 87px;
+	}
+	#header section.wrapper{
+		width: 455px;
+	}
+	#header section.wrapper div.nav{
+		width: 5%;
+	}
+	#header section.wrapper div.nav ul li :nth-child (1) {
+		display: none;
+	}
+
+@media all and (max-width: 480px){
+	#header div.left img {
+		width: 85%;
+		position: relative;
+		right: 60px;
+		bottom: 3px;
+	}
+	#header div.right ul{
+		font-size: 6px;
+	}
+	#spotlight{
+		width: 126%;
+		height: 100vh;
+	}
+	#header{
+		height: 49px;
+	}
+	#spotlight div.content h1 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 5px;
+	}
+	#spotlight div.content {
+		height: 56px;
+	}
+	#spotlight div.search {
+		width: 84%;
+		height: 52px;
+	}
+	#spotlight div.search input.search-space {
+		width: 65%;
+		height: 40px;
+	}
+@media all and (max-width: 360px){
+		#header {
+			height: 40px;
+	}
+	#header div.right {
+		width: 88%;
+		padding-top: 19px;
+	}
+	#header div.right ul {
+		font-size: 3px;
+	}
+	#spotlight {
+		width: 142%;
+		margin-top: 26px;
+	}
+	#spotlight div.content h1 {
+		font-size: 20px;
+		margin-left: 90px;
+	}
+	#spotlight div.search {
+		width: 87%;
+		height: 45px;
+	}
+	#spotlight div.search input.search-space {
+		width: 60%;
+		height: 30px;
+	}
+	#spotlight div.search div.img-box a img{
+		width: 70%;
+	}
+	#spotlight div.search a button{
+		height: 30px;
+	}
+	#spotlight div.content {
+		height: 70px;
+	}
+	#header div.left img {
+		width: 100%;
+		position: relative;
+		right: 57px;
+		bottom: 0px;
+	}
+	#header div.left {
+		width: 18%;
+	}
+	#spotlight div.content {
+		height: 57px;
+		width: 100%;
+	}
+	#spotlight div.search div.img-box {
+		width: 36px;
+	}
+	#spotlight div.search input.search-space{
+		height: 29px;
+		width: 54%;
+	}
+}
